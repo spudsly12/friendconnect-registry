@@ -38,5 +38,5 @@ app.post('/heartbeat', async (req, res) => {
   } catch (e) { res.status(500).json({ error: e.message }); }
 });
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => console.log('FriendConnect Registry running on port ' + PORT));
